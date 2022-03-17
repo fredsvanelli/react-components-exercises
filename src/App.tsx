@@ -10,6 +10,8 @@ import Q2Uppercase from './components/Q2Uppercase';
 import Q6LastChar from './components/Q6LastChar';
 import Q7PhraseWithTwoStrings from './components/Q7PhraseWithTwoStrings';
 import Q9WordRepeatingWithSpaceAndComma from './components/Q9CharRepeatingWithSpaceAndComma';
+import Q3Lowercase from './components/Q3Lowercase';
+import Q4Length from './components/Q4Length';
 
 const App: React.FC = () => {
     return (
@@ -36,14 +38,18 @@ const App: React.FC = () => {
                 3. Crie um componente que recebe uma prop &quot;value&quot;, do
                 tipo string, e retorna em letras minúsculas.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q3Lowercase value="TESTE" />
+            </div>
 
             <h2 className="fs-6">
                 4. Crie um componente que recebe uma prop &quot;value&quot;, do
                 tipo string, e retorna um número dizendo a quantidade de
                 caracteres contidas nessa string.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q4Length value="Frase de teste" />
+            </div>
 
             <h2 className="fs-6">
                 5. Crie um componente que recebe uma prop &quot;value&quot;, do
