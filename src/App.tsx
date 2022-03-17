@@ -1,7 +1,7 @@
 import './App.css';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
-import Q7PhraseWhithTwoStrings from './components/Q7PhraseWhithTwoStrings';
+import Q7PhraseWithTwoStrings from './components/Q7PhraseWithTwoStrings';
 
 const App: React.FC = () => {
     return (
@@ -62,7 +62,7 @@ const App: React.FC = () => {
                 Retorno: Oi tudo bem?
             </h2>
             <div className="card p-3 mb-4">
-                <Q7PhraseWhithTwoStrings value1="Oi" value2="tudo bem?" />
+                <Q7PhraseWithTwoStrings value1="Oi" value2="tudo bem?" />
             </div>
 
             <h2 className="fs-6">
