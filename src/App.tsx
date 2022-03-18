@@ -176,6 +176,10 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q19Division firstNumber={10} secondNumber={0} />
+                <Q19Division firstNumber={10} secondNumber={-9} />
+                <Q19Division firstNumber={10} secondNumber={3} />
+                <Q19Division firstNumber={-100} secondNumber={10} />
+                <Q19Division firstNumber={10} secondNumber={-100} />
             </div>
 
             <h2 className="fs-6">
