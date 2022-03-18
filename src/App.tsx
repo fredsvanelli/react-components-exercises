@@ -194,6 +194,11 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q22BiggestNumber firstNumber={1} secondNumber={4} />
+                <Q22BiggestNumber firstNumber={1} secondNumber={-10} />
+                <Q22BiggestNumber firstNumber={-1} secondNumber={0} />
+                <Q22BiggestNumber firstNumber={-10} secondNumber={-4} />
+                <Q22BiggestNumber firstNumber={-1.5} secondNumber={4.6} />
+                <Q22BiggestNumber firstNumber={1} secondNumber={-1} />
             </div>
 
             <h2 className="fs-6">
