@@ -8,7 +8,7 @@ const Q9CharRepeatingWithSpaceAndComma: React.FC<
 > = ({ value, number }) => {
     const myArray = [value];
 
-    for (let i = 0; i < number; i += 1) {
+    for (let i = 0; i < number - 1; i += 1) {
         myArray.push(value);
     }
 
