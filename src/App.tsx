@@ -157,6 +157,9 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q16Sum firstNumber={-10} secondNumber={100} />
+                <Q16Sum firstNumber={10} secondNumber={100} />
+                <Q16Sum firstNumber={0} secondNumber={0} />
+                <Q16Sum firstNumber={0} secondNumber={-10} />
             </div>
 
             <h2 className="fs-6">
