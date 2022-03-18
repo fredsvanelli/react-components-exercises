@@ -169,6 +169,10 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q18Multiplication firstNumber={5} secondNumber={10} />
+                <Q18Multiplication firstNumber={5.9} secondNumber={-10} />
+                <Q18Multiplication firstNumber={0} secondNumber={10.98} />
+                <Q18Multiplication firstNumber={-5} secondNumber={10} />
+                <Q18Multiplication firstNumber={-5} secondNumber={-10} />
             </div>
 
             <h2 className="fs-6">
