@@ -1,5 +1,6 @@
 import './App.css';
 import Q1String from './components/Q1String';
+import Q25PrimeNumbers from './components/Q25PrimeNumbers';
 import Q2Uppercase from './components/Q2Uppercase';
 
 const App: React.FC = () => {
@@ -211,7 +212,9 @@ const App: React.FC = () => {
                 &quot;Sim&quot; se ele for primo. Caso contrário, retorna
                 &quot;Não&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q25PrimeNumbers value={4} />
+            </div>
 
             <h2 className="fs-6">
                 26. Crie um componente que recebe um número X e retorna os
