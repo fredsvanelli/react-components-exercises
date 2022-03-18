@@ -1,4 +1,5 @@
 import './App.css';
+import Q14FirstLetterUppercase from './components/Q14FirstLetterUppercase';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 
@@ -137,7 +138,9 @@ const App: React.FC = () => {
                 <br /> Prop 1: MaS QuE LoUcUrA.
                 <br /> Retorno: Mas que loucura.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q14FirstLetterUppercase value="MaS QuE LoUcUrA" />
+            </div>
 
             <h2 className="fs-6">
                 15. Crie um componente que recebe uma string e retorna a
