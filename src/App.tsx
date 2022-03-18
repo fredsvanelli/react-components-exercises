@@ -1,6 +1,6 @@
 import './App.css';
 import Q1String from './components/Q1String';
-import Q20Exponential from './components/Q20Exponential';
+import Q20Squared from './components/Q20Squared';
 import Q2Uppercase from './components/Q2Uppercase';
 
 const App: React.FC = () => {
@@ -181,7 +181,11 @@ const App: React.FC = () => {
                 elevado a 2
             </h2>
             <div className="card p-3 mb-4">
-                <Q20Exponential firstNumber={3} />
+                <Q20Squared firstNumber={0} />
+                <Q20Squared firstNumber={-3} />
+                <Q20Squared firstNumber={3} />
+                <Q20Squared firstNumber={3.5} />
+                <Q20Squared firstNumber={-3.5} />
             </div>
 
             <h2 className="fs-6">
