@@ -1,5 +1,6 @@
 import './App.css';
 import Q1String from './components/Q1String';
+import Q21ExponentialBetweenTwoNumbers from './components/Q21ExponentialBetweenTwoNumbers';
 import Q2Uppercase from './components/Q2Uppercase';
 
 const App: React.FC = () => {
@@ -185,7 +186,12 @@ const App: React.FC = () => {
                 21. Crie um componente que recebe dois números e retorna o
                 primeiro elevado pelo segundo
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3}
+                    secondNumber={3}
+                />
+            </div>
 
             <h2 className="fs-6">
                 22. Crie um componente que recebe dois números e retorna o maior
