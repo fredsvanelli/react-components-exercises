@@ -86,6 +86,9 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q9CharRepeatingWithSpaceAndComma value="Oi" number={5} />
+                <Q9CharRepeatingWithSpaceAndComma value="Oi" number={10} />
+                <Q9CharRepeatingWithSpaceAndComma value="Oi" number={-5} />
+                <Q9CharRepeatingWithSpaceAndComma value="Oi" number={0} />
             </div>
 
             <h2 className="fs-6">

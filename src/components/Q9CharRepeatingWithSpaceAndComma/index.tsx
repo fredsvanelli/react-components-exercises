@@ -6,9 +6,8 @@ interface IQ9CharRepeatingWithSpaceAndCommaProps {
 const Q9CharRepeatingWithSpaceAndComma: React.FC<
     IQ9CharRepeatingWithSpaceAndCommaProps
 > = ({ value, number }) => {
-    const myArray = [value];
-
-    for (let i = 0; i < number - 1; i += 1) {
+    const myArray = [];
+    for (let i = 0; i < number; i += 1) {
         myArray.push(value);
     }
 
