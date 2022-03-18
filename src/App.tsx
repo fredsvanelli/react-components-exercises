@@ -191,6 +191,22 @@ const App: React.FC = () => {
                     firstNumber={-3}
                     secondNumber={3}
                 />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3}
+                    secondNumber={0}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3}
+                    secondNumber={-3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3.5}
+                    secondNumber={3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3.5}
+                    secondNumber={-3}
+                />
             </div>
 
             <h2 className="fs-6">
