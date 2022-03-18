@@ -6,6 +6,6 @@ interface IQ11FindASubstringInStringProps {
 const Q11FindASubstringInString: React.FC<IQ11FindASubstringInStringProps> = ({
     first,
     second,
-}) => <span>{first.match(second) ? 'Sim' : 'Não'}</span>;
+}) => <span>{Array.isArray(first.match(second)) ? 'Sim' : 'Não'}</span>;
 
 export default Q11FindASubstringInString;
