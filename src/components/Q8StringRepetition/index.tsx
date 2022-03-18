@@ -8,7 +8,7 @@ const Q8StringRepetition: React.FC<IQ8StringRepetitionProps> = ({
     number,
 }) => {
     let phrase = '';
-    for (let i = 0; i < number - 1; i += 1) {
+    for (let i = 0; i < number; i += 1) {
         phrase += value;
     }
     return <span>{phrase}</span>;
