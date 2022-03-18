@@ -1,7 +1,7 @@
 import './App.css';
+import Q15FirstLettersUppercase from './components/Q15FirstLettersUppercase';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
-import Q15FirstLettersUppercase from './components/Q2Uppercase copy';
 
 const App: React.FC = () => {
     return (
