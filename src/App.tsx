@@ -199,6 +199,8 @@ const App: React.FC = () => {
                 <Q22BiggestNumber firstNumber={-10} secondNumber={-4} />
                 <Q22BiggestNumber firstNumber={-1.5} secondNumber={4.6} />
                 <Q22BiggestNumber firstNumber={1} secondNumber={-1} />
+                <Q22BiggestNumber firstNumber={3} secondNumber={3} />
+                <Q22BiggestNumber firstNumber={-3} secondNumber={-3} />
             </div>
 
             <h2 className="fs-6">
