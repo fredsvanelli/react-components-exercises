@@ -181,11 +181,11 @@ const App: React.FC = () => {
                 elevado a 2
             </h2>
             <div className="card p-3 mb-4">
-                <Q20Squared firstNumber={0} />
-                <Q20Squared firstNumber={-3} />
-                <Q20Squared firstNumber={3} />
-                <Q20Squared firstNumber={3.5} />
-                <Q20Squared firstNumber={-3.5} />
+                <Q20Squared value={0} />
+                <Q20Squared value={-3} />
+                <Q20Squared value={3} />
+                <Q20Squared value={3.5} />
+                <Q20Squared value={-3.5} />
             </div>
 
             <h2 className="fs-6">
