@@ -140,6 +140,10 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q14FirstLetterUppercase value="MaS QuE LoUcUrA" />
+                <Q14FirstLetterUppercase value="mas que loucura esse devs" />
+                <Q14FirstLetterUppercase value="MAS QUE LOUCURA ESSE DEVS" />
+                <Q14FirstLetterUppercase value="mAS qUE lOUCURA eSSE dEVS" />
+                <Q14FirstLetterUppercase value="MaS  QuE LoUcUrA" />
             </div>
 
             <h2 className="fs-6">
