@@ -213,8 +213,7 @@ const App: React.FC = () => {
                 &quot;Não&quot;
             </h2>
             <div className="card p-3 mb-4">
-                <Q25PrimeNumbers value={11} />
-                <Q25PrimeNumbers value={4} />
+                <Q25PrimeNumbers value={-9} />
             </div>
 
             <h2 className="fs-6">
