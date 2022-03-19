@@ -151,6 +151,9 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q15FirstLettersUppercase value="MaS QuE LoUcUrA" />
+                <Q15FirstLettersUppercase value="mas que loucura esse devs" />
+                <Q15FirstLettersUppercase value="MAS QUE LOUCURA ESSE DEVS" />
+                <Q15FirstLettersUppercase value="mAS qUE lOUCURA" />
             </div>
 
             <h2 className="fs-6">
