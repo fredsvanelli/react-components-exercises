@@ -129,7 +129,11 @@ const App: React.FC = () => {
                 <br /> Retorno: BXnXnX
             </h2>
             <div className="card p-3 mb-4">
-                <Q13ReplacingEvents value="Banana" event="a" change="X" />
+                <Q13ReplacingEvents value="Banana" search="a" replace="X" />
+                <Q13ReplacingEvents value="Banana" search="e" replace="X" />
+                <Q13ReplacingEvents value="" search="a" replace="X" />
+                <Q13ReplacingEvents value="" search="" replace="X" />
+                <Q13ReplacingEvents value="" search="a" replace="" />
             </div>
 
             <h2 className="fs-6">
