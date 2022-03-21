@@ -1,6 +1,6 @@
 import './App.css';
-import Q18Multiplication from './components/Q18Multiplication';
 import Q1String from './components/Q1String';
+import Q27Factorial from './components/Q27Factorial';
 import Q2Uppercase from './components/Q2Uppercase';
 
 const App: React.FC = () => {
@@ -168,7 +168,9 @@ const App: React.FC = () => {
                 da multiplicação entre eles.
             </h2>
             <div className="card p-3 mb-4">
-                <Q18Multiplication firstNumber={5} secondNumber={10} />
+                <div className="card p-3 mb-4">
+                    {/* Insira a resposta aqui */}
+                </div>
             </div>
 
             <h2 className="fs-6">
@@ -226,7 +228,9 @@ const App: React.FC = () => {
                 27. Crie um componente que recebe um número X e retorna o seu
                 fatorial
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q27Factorial value={3} />
+            </div>
 
             <h2 className="fs-6">
                 28. Crie um componente que recebe um número X e retorna se ele é
