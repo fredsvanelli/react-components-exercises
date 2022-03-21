@@ -5,10 +5,13 @@ interface IQ27FactorialProps {
 const Q27Factorial: React.FC<IQ27FactorialProps> = ({ value }) => {
     let fact = 1;
 
-    for (let i = value; i > 1; i -= 1) {
-        fact *= i;
+    if (value >= 0) {
+        for (let i = value; i > 1; i -= 1) {
+            fact *= i;
+        }
+        return <span>{fact}</span>;
     }
-    return <span>{fact}</span>;
+    return <span>Não existe fatorial para números negativos</span>;
 };
 
 export default Q27Factorial;

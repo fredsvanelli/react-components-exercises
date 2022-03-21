@@ -230,6 +230,10 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q27Factorial value={3} />
+                <Q27Factorial value={0} />
+                <Q27Factorial value={1} />
+                <Q27Factorial value={-3} />
+                <Q27Factorial value={-10} />
             </div>
 
             <h2 className="fs-6">
