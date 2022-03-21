@@ -1,6 +1,7 @@
 import './App.css';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q1String from './components/Q1String';
+import Q28OddsOrEvens from './components/Q28OddsOrEvens';
 import Q2Uppercase from './components/Q2Uppercase';
 
 const App: React.FC = () => {
@@ -232,7 +233,14 @@ const App: React.FC = () => {
                 28. Crie um componente que recebe um número X e retorna se ele é
                 &quot;Par&quot; ou &quot;Ímpar&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q28OddsOrEvens value={8} />
+                <Q28OddsOrEvens value={-8} />
+                <Q28OddsOrEvens value={11} />
+                <Q28OddsOrEvens value={0} />
+                <Q28OddsOrEvens value={4.4} />
+                <Q28OddsOrEvens value={-5.4} />
+            </div>
 
             <h2 className="fs-6">
                 29. Crie um componente que recebe dois números, X e Y, retorna
