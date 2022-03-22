@@ -1,7 +1,10 @@
 import './App.css';
 import Q18Multiplication from './components/Q18Multiplication';
+import Q11FindASubstringInString from './components/Q11FindASubstringInString';
 import Q1String from './components/Q1String';
+import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q7PhraseWithTwoStrings from './components/Q7PhraseWithTwoStrings';
 
 const App: React.FC = () => {
     return (
@@ -61,7 +64,9 @@ const App: React.FC = () => {
                 <br />
                 Retorno: Oi tudo bem?
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q7PhraseWithTwoStrings value1="Oi" value2="tudo bem?" />
+            </div>
 
             <h2 className="fs-6">
                 8. Crie um componente que recebe duas props, uma string e um
@@ -102,7 +107,12 @@ const App: React.FC = () => {
                 <br /> Prop 2: mente
                 <br /> Retorno: Sim
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q11FindASubstringInString
+                    first="Simplesmente"
+                    second="mente"
+                />
+            </div>
 
             <h2 className="fs-6">
                 12. Crie um componente que recebe uma string e um número.
@@ -211,7 +221,9 @@ const App: React.FC = () => {
                 um número inteiro aleatório entre X e Y. Caso X seja maior ou
                 igual a Y, retorna &quot;Inválido&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q24RandomBetweenTwoNumbers x={1} y={10} />
+            </div>
 
             <h2 className="fs-6">
                 25. Crie um componente que recebe um número e retorna
