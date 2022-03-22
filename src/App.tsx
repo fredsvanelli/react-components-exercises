@@ -1,4 +1,6 @@
 import './App.css';
+import Q14FirstLetterUppercase from './components/Q14FirstLetterUppercase';
+import Q18Multiplication from './components/Q18Multiplication';
 import Q11FindASubstringInString from './components/Q11FindASubstringInString';
 import Q1String from './components/Q1String';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
@@ -147,7 +149,13 @@ const App: React.FC = () => {
                 <br /> Prop 1: MaS QuE LoUcUrA.
                 <br /> Retorno: Mas que loucura.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q14FirstLetterUppercase value="MaS QuE LoUcUrA" />
+                <Q14FirstLetterUppercase value="mas que loucura esse devs" />
+                <Q14FirstLetterUppercase value="MAS QUE LOUCURA ESSE DEVS" />
+                <Q14FirstLetterUppercase value="mAS qUE lOUCURA eSSE dEVS" />
+                <Q14FirstLetterUppercase value="MaS  QuE LoUcUrA" />
+            </div>
 
             <h2 className="fs-6">
                 15. Crie um componente que recebe uma string e retorna a
@@ -176,7 +184,13 @@ const App: React.FC = () => {
                 18. Crie um componente que recebe dois números e retorna o valor
                 da multiplicação entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q18Multiplication firstNumber={5} secondNumber={10} />
+                <Q18Multiplication firstNumber={5.9} secondNumber={-10} />
+                <Q18Multiplication firstNumber={0} secondNumber={10.98} />
+                <Q18Multiplication firstNumber={-5} secondNumber={10} />
+                <Q18Multiplication firstNumber={-5} secondNumber={-10} />
+            </div>
 
             <h2 className="fs-6">
                 19. Crie um componente que recebe dois números e retorna o valor
