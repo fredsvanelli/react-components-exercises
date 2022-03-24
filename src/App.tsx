@@ -5,8 +5,8 @@ import Q11FindASubstringInString from './components/Q11FindASubstringInString';
 import Q1String from './components/Q1String';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
 import Q2Uppercase from './components/Q2Uppercase';
-import Q7PhraseWithTwoStrings from './components/Q7PhraseWithTwoStrings';
 import Q9WordRepeatingWithSpaceAndComma from './components/Q9CharRepeatingWithSpaceAndComma';
+import Q7PhraseWithTwoStrings from './components/Q7PhraseWhithTwoStrings';
 
 const App: React.FC = () => {
     return (
