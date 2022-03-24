@@ -1,7 +1,7 @@
 import './App.css';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
-import Q9CharRepeatingWithSpaceAndComma from './components/Q9CharRepeatingWithSpaceAndComma';
+import Q9WordRepeatingWithSpaceAndComma from './components/Q9CharRepeatingWithSpaceAndComma';
 
 const App: React.FC = () => {
     return (
@@ -85,10 +85,10 @@ const App: React.FC = () => {
                 <br /> Retorno: Oi, Oi, Oi, Oi, Oi
             </h2>
             <div className="card p-3 mb-4">
-                <Q9CharRepeatingWithSpaceAndComma value="Oi" number={5} />
-                <Q9CharRepeatingWithSpaceAndComma value="Oi" number={10} />
-                <Q9CharRepeatingWithSpaceAndComma value="Oi" number={-5} />
-                <Q9CharRepeatingWithSpaceAndComma value="Oi" number={0} />
+                <Q9WordRepeatingWithSpaceAndComma value="Oi" number={5} />
+                <Q9WordRepeatingWithSpaceAndComma value="Oi" number={10} />
+                <Q9WordRepeatingWithSpaceAndComma value="Oi" number={-5} />
+                <Q9WordRepeatingWithSpaceAndComma value="Oi" number={0} />
             </div>
 
             <h2 className="fs-6">

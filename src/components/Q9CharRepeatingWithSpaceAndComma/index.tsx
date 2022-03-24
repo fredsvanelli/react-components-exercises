@@ -1,10 +1,10 @@
-interface IQ9CharRepeatingWithSpaceAndCommaProps {
+interface IQ9WordRepeatingWithSpaceAndCommaProps {
     value: string;
     number: number;
 }
 
-const Q9CharRepeatingWithSpaceAndComma: React.FC<
-    IQ9CharRepeatingWithSpaceAndCommaProps
+const Q9WordRepeatingWithSpaceAndComma: React.FC<
+    IQ9WordRepeatingWithSpaceAndCommaProps
 > = ({ value, number }) => {
     const myArray = [];
     for (let i = 0; i < number; i += 1) {
@@ -14,4 +14,4 @@ const Q9CharRepeatingWithSpaceAndComma: React.FC<
     return <span>{myArray.join(', ')}</span>;
 };
 
-export default Q9CharRepeatingWithSpaceAndComma;
+export default Q9WordRepeatingWithSpaceAndComma;
