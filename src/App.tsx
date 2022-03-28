@@ -2,6 +2,7 @@ import './App.css';
 import Q14FirstLetterUppercase from './components/Q14FirstLetterUppercase';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q11FindASubstringInString from './components/Q11FindASubstringInString';
+import Q16Sum from './components/Q16Sum';
 import Q10LongerString from './components/Q10LongerString';
 import Q1String from './components/Q1String';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
@@ -184,7 +185,12 @@ const App: React.FC = () => {
                 16. Crie um componente que recebe dois números e retorna o valor
                 da soma entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q16Sum firstNumber={-10} secondNumber={100} />
+                <Q16Sum firstNumber={10} secondNumber={100} />
+                <Q16Sum firstNumber={0} secondNumber={0} />
+                <Q16Sum firstNumber={0} secondNumber={-10} />
+            </div>
 
             <h2 className="fs-6">
                 17. Crie um componente que recebe dois números e retorna o valor
