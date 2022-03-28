@@ -77,6 +77,7 @@ const App: React.FC = () => {
                 <Q8StringRepetition value="Oi" number={10} />
                 <Q8StringRepetition value="Oi" number={-5} />
                 <Q8StringRepetition value="Oi" number={0} />
+                <Q8StringRepetition value="Oi" number={10} />
             </div>
 
             <h2 className="fs-6">
