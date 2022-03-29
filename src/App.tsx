@@ -2,10 +2,12 @@ import './App.css';
 import Q14FirstLetterUppercase from './components/Q14FirstLetterUppercase';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q11FindASubstringInString from './components/Q11FindASubstringInString';
+import Q16Sum from './components/Q16Sum';
 import Q15FirstLettersUppercase from './components/Q15FirstLettersUppercase';
 import Q1String from './components/Q1String';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q6LastChar from './components/Q6LastChar';
 import Q7PhraseWithTwoStrings from './components/Q7PhraseWithTwoStrings';
 import Q9WordRepeatingWithSpaceAndComma from './components/Q9CharRepeatingWithSpaceAndComma';
 
@@ -53,7 +55,9 @@ const App: React.FC = () => {
                 6. Crie um componente que recebe uma prop &quot;value&quot;, do
                 tipo string, e retorna a última letra dessa string.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q6LastChar value="Teste" />
+            </div>
 
             <h2 className="fs-6">
                 7. Crie um componente que recebe duas props do tipo string e
@@ -184,7 +188,12 @@ const App: React.FC = () => {
                 16. Crie um componente que recebe dois números e retorna o valor
                 da soma entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q16Sum firstNumber={-10} secondNumber={100} />
+                <Q16Sum firstNumber={10} secondNumber={100} />
+                <Q16Sum firstNumber={0} secondNumber={0} />
+                <Q16Sum firstNumber={0} secondNumber={-10} />
+            </div>
 
             <h2 className="fs-6">
                 17. Crie um componente que recebe dois números e retorna o valor
