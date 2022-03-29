@@ -6,6 +6,7 @@ import Q16Sum from './components/Q16Sum';
 import Q17Subtraction from './components/Q17Subtraction';
 import Q19Division from './components/Q19Division';
 import Q1String from './components/Q1String';
+import Q20Squared from './components/Q20Squared';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
 import Q22BiggestNumber from './components/Q22BiggestNumber';
 import Q2Uppercase from './components/Q2Uppercase';
@@ -242,7 +243,13 @@ const App: React.FC = () => {
                 20. Crie um componente que recebe um número e retorna o mesmo
                 elevado a 2
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q20Squared value={0} />
+                <Q20Squared value={-3} />
+                <Q20Squared value={3} />
+                <Q20Squared value={3.5} />
+                <Q20Squared value={-3.5} />
+            </div>
 
             <h2 className="fs-6">
                 21. Crie um componente que recebe dois números e retorna o
