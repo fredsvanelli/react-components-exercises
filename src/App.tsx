@@ -4,13 +4,16 @@ import Q18Multiplication from './components/Q18Multiplication';
 import Q11FindASubstringInString from './components/Q11FindASubstringInString';
 import Q16Sum from './components/Q16Sum';
 import Q10LongerString from './components/Q10LongerString';
+import Q17Subtraction from './components/Q17Subtraction';
 import Q1String from './components/Q1String';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q6LastChar from './components/Q6LastChar';
+import Q8StringRepetition from './components/Q8StringRepetition';
 import Q7PhraseWithTwoStrings from './components/Q7PhraseWithTwoStrings';
 import Q9WordRepeatingWithSpaceAndComma from './components/Q9CharRepeatingWithSpaceAndComma';
-import Q7PhraseWithTwoStrings from './components/Q7PhraseWhithTwoStrings';
+import Q3Lowercase from './components/Q3Lowercase';
+import Q4Length from './components/Q4Length';
 
 const App: React.FC = () => {
     return (
@@ -37,14 +40,18 @@ const App: React.FC = () => {
                 3. Crie um componente que recebe uma prop &quot;value&quot;, do
                 tipo string, e retorna em letras minúsculas.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q3Lowercase value="TESTE" />
+            </div>
 
             <h2 className="fs-6">
                 4. Crie um componente que recebe uma prop &quot;value&quot;, do
                 tipo string, e retorna um número dizendo a quantidade de
                 caracteres contidas nessa string.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q4Length value="Frase de teste" />
+            </div>
 
             <h2 className="fs-6">
                 5. Crie um componente que recebe uma prop &quot;value&quot;, do
@@ -85,7 +92,13 @@ const App: React.FC = () => {
                 <br /> Prop 2: 5.
                 <br /> Retorno: OiOiOiOiOi
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q8StringRepetition value="Oi" number={5} />
+                <Q8StringRepetition value="Oi" number={10} />
+                <Q8StringRepetition value="Oi" number={-5} />
+                <Q8StringRepetition value="Oi" number={0} />
+                <Q8StringRepetition value="Oi" number={10} />
+            </div>
 
             <h2 className="fs-6">
                 9. Crie um componente que recebe duas props, uma string e um
@@ -200,7 +213,9 @@ const App: React.FC = () => {
                 17. Crie um componente que recebe dois números e retorna o valor
                 da subtração entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q17Subtraction firstNumber={90} secondNumber={100} />
+            </div>
 
             <h2 className="fs-6">
                 18. Crie um componente que recebe dois números e retorna o valor
