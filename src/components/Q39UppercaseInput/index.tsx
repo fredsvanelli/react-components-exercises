@@ -14,13 +14,15 @@ const Q39UppercaseInput: React.FC = () => {
                     onChange={ev => setInputText(ev.target.value)}
                 />
             </div>
-            <button
-                type="button"
-                className="btn btn-primary mb-3"
-                onClick={() => setUpperCaseText(inputText.toUpperCase())}
-            >
-                Enviar
-            </button>
+            <div>
+                <button
+                    type="button"
+                    className="btn btn-primary mb-3"
+                    onClick={() => setUpperCaseText(inputText.toUpperCase())}
+                >
+                    Enviar
+                </button>
+            </div>
             <input type="text" className="form-control" value={upperCaseText} />
         </>
     );
