@@ -23,7 +23,11 @@ const Q39UppercaseInput: React.FC = () => {
                     Enviar
                 </button>
             </div>
-            <input type="text" className="form-control" value={upperCaseText} />
+            <input
+                type="readOnly"
+                className="form-control"
+                value={upperCaseText}
+            />
         </>
     );
 };
