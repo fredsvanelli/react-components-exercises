@@ -8,6 +8,7 @@ import Q1String from './components/Q1String';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q6LastChar from './components/Q6LastChar';
+import Q8StringRepetition from './components/Q8StringRepetition';
 import Q7PhraseWithTwoStrings from './components/Q7PhraseWithTwoStrings';
 import Q9WordRepeatingWithSpaceAndComma from './components/Q9CharRepeatingWithSpaceAndComma';
 import Q3Lowercase from './components/Q3Lowercase';
@@ -90,7 +91,13 @@ const App: React.FC = () => {
                 <br /> Prop 2: 5.
                 <br /> Retorno: OiOiOiOiOi
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q8StringRepetition value="Oi" number={5} />
+                <Q8StringRepetition value="Oi" number={10} />
+                <Q8StringRepetition value="Oi" number={-5} />
+                <Q8StringRepetition value="Oi" number={0} />
+                <Q8StringRepetition value="Oi" number={10} />
+            </div>
 
             <h2 className="fs-6">
                 9. Crie um componente que recebe duas props, uma string e um
