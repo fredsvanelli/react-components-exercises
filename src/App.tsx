@@ -4,6 +4,7 @@ import Q18Multiplication from './components/Q18Multiplication';
 import Q11FindASubstringInString from './components/Q11FindASubstringInString';
 import Q16Sum from './components/Q16Sum';
 import Q17Subtraction from './components/Q17Subtraction';
+import Q19Division from './components/Q19Division';
 import Q1String from './components/Q1String';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
 import Q22BiggestNumber from './components/Q22BiggestNumber';
@@ -229,7 +230,13 @@ const App: React.FC = () => {
                 da divisão entre eles. Se o divisor for zero, retorna
                 &quot;Inválido&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q19Division firstNumber={10} secondNumber={0} />
+                <Q19Division firstNumber={10} secondNumber={-9} />
+                <Q19Division firstNumber={10} secondNumber={3} />
+                <Q19Division firstNumber={-100} secondNumber={10} />
+                <Q19Division firstNumber={10} secondNumber={-100} />
+            </div>
 
             <h2 className="fs-6">
                 20. Crie um componente que recebe um número e retorna o mesmo
