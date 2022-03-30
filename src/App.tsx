@@ -4,13 +4,19 @@ import Q18Multiplication from './components/Q18Multiplication';
 import Q11FindASubstringInString from './components/Q11FindASubstringInString';
 import Q16Sum from './components/Q16Sum';
 import Q17Subtraction from './components/Q17Subtraction';
+import Q19Division from './components/Q19Division';
 import Q1String from './components/Q1String';
+import Q20Squared from './components/Q20Squared';
 import Q28OddsOrEvens from './components/Q28OddsOrEvens';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
+import Q22BiggestNumber from './components/Q22BiggestNumber';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q6LastChar from './components/Q6LastChar';
+import Q8StringRepetition from './components/Q8StringRepetition';
 import Q7PhraseWithTwoStrings from './components/Q7PhraseWithTwoStrings';
 import Q9WordRepeatingWithSpaceAndComma from './components/Q9CharRepeatingWithSpaceAndComma';
+import Q3Lowercase from './components/Q3Lowercase';
+import Q4Length from './components/Q4Length';
 
 const App: React.FC = () => {
     return (
@@ -37,14 +43,18 @@ const App: React.FC = () => {
                 3. Crie um componente que recebe uma prop &quot;value&quot;, do
                 tipo string, e retorna em letras minúsculas.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q3Lowercase value="TESTE" />
+            </div>
 
             <h2 className="fs-6">
                 4. Crie um componente que recebe uma prop &quot;value&quot;, do
                 tipo string, e retorna um número dizendo a quantidade de
                 caracteres contidas nessa string.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q4Length value="Frase de teste" />
+            </div>
 
             <h2 className="fs-6">
                 5. Crie um componente que recebe uma prop &quot;value&quot;, do
@@ -85,7 +95,13 @@ const App: React.FC = () => {
                 <br /> Prop 2: 5.
                 <br /> Retorno: OiOiOiOiOi
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q8StringRepetition value="Oi" number={5} />
+                <Q8StringRepetition value="Oi" number={10} />
+                <Q8StringRepetition value="Oi" number={-5} />
+                <Q8StringRepetition value="Oi" number={0} />
+                <Q8StringRepetition value="Oi" number={10} />
+            </div>
 
             <h2 className="fs-6">
                 9. Crie um componente que recebe duas props, uma string e um
@@ -216,13 +232,25 @@ const App: React.FC = () => {
                 da divisão entre eles. Se o divisor for zero, retorna
                 &quot;Inválido&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q19Division firstNumber={10} secondNumber={0} />
+                <Q19Division firstNumber={10} secondNumber={-9} />
+                <Q19Division firstNumber={10} secondNumber={3} />
+                <Q19Division firstNumber={-100} secondNumber={10} />
+                <Q19Division firstNumber={10} secondNumber={-100} />
+            </div>
 
             <h2 className="fs-6">
                 20. Crie um componente que recebe um número e retorna o mesmo
                 elevado a 2
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q20Squared value={0} />
+                <Q20Squared value={-3} />
+                <Q20Squared value={3} />
+                <Q20Squared value={3.5} />
+                <Q20Squared value={-3.5} />
+            </div>
 
             <h2 className="fs-6">
                 21. Crie um componente que recebe dois números e retorna o
@@ -234,7 +262,16 @@ const App: React.FC = () => {
                 22. Crie um componente que recebe dois números e retorna o maior
                 entre eles
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q22BiggestNumber firstNumber={1} secondNumber={4} />
+                <Q22BiggestNumber firstNumber={1} secondNumber={-10} />
+                <Q22BiggestNumber firstNumber={-1} secondNumber={0} />
+                <Q22BiggestNumber firstNumber={-10} secondNumber={-4} />
+                <Q22BiggestNumber firstNumber={-1.5} secondNumber={4.6} />
+                <Q22BiggestNumber firstNumber={1} secondNumber={-1} />
+                <Q22BiggestNumber firstNumber={3} secondNumber={3} />
+                <Q22BiggestNumber firstNumber={-3} secondNumber={-3} />
+            </div>
 
             <h2 className="fs-6">
                 23. Crie um componente que retorna um número inteiro aleatório
