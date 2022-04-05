@@ -5,6 +5,7 @@ import Q11FindASubstringInString from './components/Q11FindASubstringInString';
 import Q16Sum from './components/Q16Sum';
 import Q10LongerString from './components/Q10LongerString';
 import Q13ReplacingEvents from './components/Q13ReplacingEvents';
+import Q15FirstLettersUppercase from './components/Q15FirstLettersUppercase';
 import Q17Subtraction from './components/Q17Subtraction';
 import Q19Division from './components/Q19Division';
 import Q1String from './components/Q1String';
@@ -211,7 +212,12 @@ const App: React.FC = () => {
                 <br /> Prop 1: MaS QuE LoUcUrA.
                 <br /> Retorno: Mas Que Loucura.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q15FirstLettersUppercase value="MaS QuE LoUcUrA" />
+                <Q15FirstLettersUppercase value="mas que loucura esse devs" />
+                <Q15FirstLettersUppercase value="MAS QUE LOUCURA ESSE DEVS" />
+                <Q15FirstLettersUppercase value="mAS qUE lOUCURA" />
+            </div>
 
             <h2 className="fs-6">
                 16. Crie um componente que recebe dois números e retorna o valor
