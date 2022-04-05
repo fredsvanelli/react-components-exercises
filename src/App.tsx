@@ -3,18 +3,26 @@ import Q14FirstLetterUppercase from './components/Q14FirstLetterUppercase';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q11FindASubstringInString from './components/Q11FindASubstringInString';
 import Q16Sum from './components/Q16Sum';
+import Q10LongerString from './components/Q10LongerString';
 import Q13ReplacingEvents from './components/Q13ReplacingEvents';
 import Q17Subtraction from './components/Q17Subtraction';
+import Q19Division from './components/Q19Division';
 import Q1String from './components/Q1String';
+import Q21ExponentialBetweenTwoNumbers from './components/Q21ExponentialBetweenTwoNumbers';
+import Q20Squared from './components/Q20Squared';
+import Q28OddsOrEvens from './components/Q28OddsOrEvens';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
 import Q22BiggestNumber from './components/Q22BiggestNumber';
+import Q23Random from './components/Q23Random';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q6LastChar from './components/Q6LastChar';
 import Q8StringRepetition from './components/Q8StringRepetition';
-import Q7PhraseWithTwoStrings from './components/Q7PhraseWithTwoStrings';
 import Q9WordRepeatingWithSpaceAndComma from './components/Q9CharRepeatingWithSpaceAndComma';
+import Q7PhraseWithTwoStrings from './components/Q7PhraseWhithTwoStrings';
+import Q39UppercaseInput from './components/Q39UppercaseInput';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4Length from './components/Q4Length';
+import Q7PhraseWithTwoStrings from './components/Q7PhraseWhithTwoStrings';
 
 const App: React.FC = () => {
     return (
@@ -122,7 +130,12 @@ const App: React.FC = () => {
                 10. Crie um componente que recebe duas strings e retorna a que
                 tiver mais caracteres.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q10LongerString
+                    first="Primeiro Teste"
+                    second="Segundo Teste"
+                />
+            </div>
 
             <h2 className="fs-6">
                 11. Crie um componente que recebe duas strings e retorna
@@ -236,19 +249,76 @@ const App: React.FC = () => {
                 da divisão entre eles. Se o divisor for zero, retorna
                 &quot;Inválido&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q19Division firstNumber={10} secondNumber={0} />
+                <Q19Division firstNumber={10} secondNumber={-9} />
+                <Q19Division firstNumber={10} secondNumber={3} />
+                <Q19Division firstNumber={-100} secondNumber={10} />
+                <Q19Division firstNumber={10} secondNumber={-100} />
+            </div>
 
             <h2 className="fs-6">
                 20. Crie um componente que recebe um número e retorna o mesmo
                 elevado a 2
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q20Squared value={0} />
+                <Q20Squared value={-3} />
+                <Q20Squared value={3} />
+                <Q20Squared value={3.5} />
+                <Q20Squared value={-3.5} />
+            </div>
 
             <h2 className="fs-6">
                 21. Crie um componente que recebe dois números e retorna o
                 primeiro elevado pelo segundo
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3}
+                    secondNumber={3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3}
+                    secondNumber={0}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3}
+                    secondNumber={-3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3.5}
+                    secondNumber={3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3.5}
+                    secondNumber={-3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={3}
+                    secondNumber={-3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={3}
+                    secondNumber={3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={0}
+                    secondNumber={3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={0}
+                    secondNumber={-3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={3}
+                    secondNumber={-3.5}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={3}
+                    secondNumber={3.5}
+                />
+            </div>
 
             <h2 className="fs-6">
                 22. Crie um componente que recebe dois números e retorna o maior
@@ -269,7 +339,9 @@ const App: React.FC = () => {
                 23. Crie um componente que retorna um número inteiro aleatório
                 entre 0 e 10
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q23Random />
+            </div>
 
             <h2 className="fs-6">
                 24. Crie um componente que recebe dois números, X e Y, e retorna
@@ -303,7 +375,14 @@ const App: React.FC = () => {
                 28. Crie um componente que recebe um número X e retorna se ele é
                 &quot;Par&quot; ou &quot;Ímpar&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q28OddsOrEvens value={8} />
+                <Q28OddsOrEvens value={-8} />
+                <Q28OddsOrEvens value={11} />
+                <Q28OddsOrEvens value={0} />
+                <Q28OddsOrEvens value={4.4} />
+                <Q28OddsOrEvens value={-5.4} />
+            </div>
 
             <h2 className="fs-6">
                 29. Crie um componente que recebe dois números, X e Y, retorna
@@ -382,7 +461,9 @@ const App: React.FC = () => {
                 no botão o segundo input deve receber o valor do primeiro,
                 convertido para letras maiúsculas
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q39UppercaseInput />
+            </div>
 
             <h2 className="fs-6">
                 40. Crie um componente que tem um input de texto, um segundo
