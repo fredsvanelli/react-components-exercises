@@ -16,6 +16,7 @@ import Q7PhraseWithTwoStrings from './components/Q7PhraseWithTwoStrings';
 import Q9WordRepeatingWithSpaceAndComma from './components/Q9CharRepeatingWithSpaceAndComma';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4Length from './components/Q4Length';
+import Q7PhraseWithTwoStrings from './components/Q7PhraseWhithTwoStrings';
 
 const App: React.FC = () => {
     return (
