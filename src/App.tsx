@@ -7,6 +7,7 @@ import Q10LongerString from './components/Q10LongerString';
 import Q17Subtraction from './components/Q17Subtraction';
 import Q19Division from './components/Q19Division';
 import Q1String from './components/Q1String';
+import Q21ExponentialBetweenTwoNumbers from './components/Q21ExponentialBetweenTwoNumbers';
 import Q20Squared from './components/Q20Squared';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
 import Q22BiggestNumber from './components/Q22BiggestNumber';
@@ -262,7 +263,52 @@ const App: React.FC = () => {
                 21. Crie um componente que recebe dois números e retorna o
                 primeiro elevado pelo segundo
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3}
+                    secondNumber={3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3}
+                    secondNumber={0}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3}
+                    secondNumber={-3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3.5}
+                    secondNumber={3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={-3.5}
+                    secondNumber={-3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={3}
+                    secondNumber={-3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={3}
+                    secondNumber={3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={0}
+                    secondNumber={3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={0}
+                    secondNumber={-3}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={3}
+                    secondNumber={-3.5}
+                />
+                <Q21ExponentialBetweenTwoNumbers
+                    firstNumber={3}
+                    secondNumber={3.5}
+                />
+            </div>
 
             <h2 className="fs-6">
                 22. Crie um componente que recebe dois números e retorna o maior
