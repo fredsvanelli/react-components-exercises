@@ -4,6 +4,7 @@ import Q18Multiplication from './components/Q18Multiplication';
 import Q11FindASubstringInString from './components/Q11FindASubstringInString';
 import Q16Sum from './components/Q16Sum';
 import Q10LongerString from './components/Q10LongerString';
+import Q13ReplacingEvents from './components/Q13ReplacingEvents';
 import Q17Subtraction from './components/Q17Subtraction';
 import Q19Division from './components/Q19Division';
 import Q1String from './components/Q1String';
@@ -177,7 +178,13 @@ const App: React.FC = () => {
                 <br /> Prop 3: X
                 <br /> Retorno: BXnXnX
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q13ReplacingEvents value="Banana" search="a" replace="X" />
+                <Q13ReplacingEvents value="Banana" search="e" replace="X" />
+                <Q13ReplacingEvents value="" search="a" replace="X" />
+                <Q13ReplacingEvents value="" search="" replace="X" />
+                <Q13ReplacingEvents value="" search="a" replace="" />
+            </div>
 
             <h2 className="fs-6">
                 14. Crie um componente que recebe uma string e retorna apenas a
