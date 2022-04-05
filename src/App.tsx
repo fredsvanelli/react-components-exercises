@@ -11,6 +11,7 @@ import Q21ExponentialBetweenTwoNumbers from './components/Q21ExponentialBetweenT
 import Q20Squared from './components/Q20Squared';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
 import Q22BiggestNumber from './components/Q22BiggestNumber';
+import Q23Random from './components/Q23Random';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q6LastChar from './components/Q6LastChar';
 import Q8StringRepetition from './components/Q8StringRepetition';
@@ -329,7 +330,9 @@ const App: React.FC = () => {
                 23. Crie um componente que retorna um número inteiro aleatório
                 entre 0 e 10
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q23Random />
+            </div>
 
             <h2 className="fs-6">
                 24. Crie um componente que recebe dois números, X e Y, e retorna
