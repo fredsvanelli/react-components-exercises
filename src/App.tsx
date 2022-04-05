@@ -12,6 +12,7 @@ import Q1String from './components/Q1String';
 import Q21ExponentialBetweenTwoNumbers from './components/Q21ExponentialBetweenTwoNumbers';
 import Q20Squared from './components/Q20Squared';
 import Q28OddsOrEvens from './components/Q28OddsOrEvens';
+import Q27Factorial from './components/Q27Factorial';
 import Q24RandomBetweenTwoNumbers from './components/Q24RandomBetweenTwoNumbers';
 import Q22BiggestNumber from './components/Q22BiggestNumber';
 import Q23Random from './components/Q23Random';
@@ -245,10 +246,6 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q18Multiplication firstNumber={5} secondNumber={10} />
-                <Q18Multiplication firstNumber={5.9} secondNumber={-10} />
-                <Q18Multiplication firstNumber={0} secondNumber={10.98} />
-                <Q18Multiplication firstNumber={-5} secondNumber={10} />
-                <Q18Multiplication firstNumber={-5} secondNumber={-10} />
             </div>
 
             <h2 className="fs-6">
@@ -384,7 +381,14 @@ const App: React.FC = () => {
                 27. Crie um componente que recebe um número X e retorna o seu
                 fatorial
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q27Factorial value={3} />
+                <Q27Factorial value={3.5} />
+                <Q27Factorial value={0} />
+                <Q27Factorial value={1} />
+                <Q27Factorial value={-3} />
+                <Q27Factorial value={-10} />
+            </div>
 
             <h2 className="fs-6">
                 28. Crie um componente que recebe um número X e retorna se ele é
